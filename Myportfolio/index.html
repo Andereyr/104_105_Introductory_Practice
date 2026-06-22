@@ -71,6 +71,40 @@
                 </article>
             </div>
         </section>
+       
+        <section class="contact-section">
+            <h2 class="section-title">Оцените моё портфолио</h2>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label class="form-label" for="review-name">Ваше имя</label>
+                    <input class="form-input" type="text" id="review-name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="review-email">Электронная почта</label>
+                    <input class="form-input" type="email" id="review-email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-choice" type="radio" id="rating-excellent" name="rating" value="excellent">
+                    <label class="choice-label" for="rating-excellent">Отлично</label>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-choice" type="radio" id="rating-good" name="rating" value="good">
+                    <label class="choice-label" for="rating-good">Хорошо</label>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-choice" type="radio" id="rating-improve" name="rating" value="improve">
+                    <label class="choice-label" for="rating-improve">Можно улучшить</label>
+                </div>
+
+                <button class="submit-btn" type="submit">Отправить оценку</button>
+            </form>
+        </section>
+
     </main>
 
     <aside class="sidebar">
