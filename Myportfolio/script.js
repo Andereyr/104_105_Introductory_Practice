@@ -97,3 +97,31 @@ portfolioData.projects.forEach(project => {
     galleryContainer.append(projectCard);
 });
 
+const openButton = document.querySelector(".btn-open");
+const closeButton = document.querySelector(".btn-close");
+const modalBox = document.querySelector(".modal");
+
+openButton.addEventListener("click", () => {
+    modalBox.classList.add("active");
+});
+
+closeButton.addEventListener("click", () => {
+    modalBox.classList.remove("active");
+});
+
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", event => {
+    event.preventDefault();
+
+    console.log("Форма перехвачена, перезагрузки не было!");
+});
+
+const messageInput = document.querySelector(".message-input");
+const charCounter = document.querySelector(".char-counter");
+
+messageInput.addEventListener("input", event => {
+    charCounter.textContent = event.target.value.length + "/100";
+});
+
+

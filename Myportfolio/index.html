@@ -51,8 +51,10 @@
             <h2 class="section-title">Мое портфолио</h2>
 
             <div class="projects-gallery"></div>
+
+            <button class="btn-open" type="button">Открыть</button>
         </section>
-       
+
         <section class="contact-section">
             <h2 class="section-title">Оцените моё портфолио</h2>
 
@@ -81,12 +83,18 @@
                     <input class="form-choice" type="radio" id="rating-improve" name="rating" value="improve">
                     <label class="choice-label" for="rating-improve">Можно улучшить</label>
                 </div>
+                <textarea class="message-input"></textarea>
+
+                <p class="char-counter">0/100</p>
 
                 <button class="submit-btn" type="submit">Отправить оценку</button>
             </form>
         </section>
 
     </main>
+    <div class="modal">
+        <button class="btn-close" type="button">Закрыть</button> 
+    </div>
 
     <aside class="sidebar">
         <h2 class="sidebar-title">Хобби</h2>
