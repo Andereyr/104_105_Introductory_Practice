@@ -41,7 +41,7 @@ projects: [
         likes: 75,
         technologies: ["HTML", "CSS", "JavaScript"]
     }
-]
+],
 
 
     preferences: new Map([
@@ -77,3 +77,23 @@ for (const project of portfolioData.projects) {
 }
 
 console.log(allTechnologies);
+
+const galleryContainer = document.querySelector(".projects-gallery");
+
+portfolioData.projects.forEach(project => {
+    const projectCard = document.createElement("div");
+    const projectTitle = document.createElement("h3");
+    const projectCategory = document.createElement("p");
+
+    projectCard.classList.add("project-card");
+    projectTitle.classList.add("project-title");
+
+    projectTitle.textContent = project.title;
+    projectCategory.textContent = "Категория: " + project.category;
+
+    projectCard.append(projectTitle);
+    projectCard.append(projectCategory);
+
+    galleryContainer.append(projectCard);
+});
+
