@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -46,32 +47,14 @@
             </article>
         </section>
 
-        <section class="cities-section">
-            <h2 class="section-title">Любимые города</h2>
+        <section class="projects-section">
+            <h2 class="section-title">Мое портфолио</h2>
 
-            <div class="cities-grid">
-                <article class="city-card">
-                    <h3 class="city-title">Москва</h3>
-                    <p>Большой город с красивыми улицами.</p>
-                </article>
+            <div class="projects-gallery"></div>
 
-                <article class="city-card">
-                    <h3 class="city-title">Санкт-Петербург</h3>
-                    <p>Город с красивой архитектурой.</p>
-                </article>
-
-                <article class="city-card">
-                    <h3 class="city-title">Казань</h3>
-                    <p>Город, в котором сочетаются история, современность и разные культуры.</p>
-                </article>
-
-                <article class="city-card">
-                    <h3 class="city-title">Сочи</h3>
-                    <p>Город у моря, где можно увидеть горы и природу.</p>
-                </article>
-            </div>
+            <button class="btn-open" type="button">Открыть</button>
         </section>
-       
+
         <section class="contact-section">
             <h2 class="section-title">Оцените моё портфолио</h2>
 
@@ -100,12 +83,18 @@
                     <input class="form-choice" type="radio" id="rating-improve" name="rating" value="improve">
                     <label class="choice-label" for="rating-improve">Можно улучшить</label>
                 </div>
+                <textarea class="message-input"></textarea>
+
+                <p class="char-counter">0/100</p>
 
                 <button class="submit-btn" type="submit">Отправить оценку</button>
             </form>
         </section>
 
     </main>
+    <div class="modal">
+        <button class="btn-close" type="button">Закрыть</button> 
+    </div>
 
     <aside class="sidebar">
         <h2 class="sidebar-title">Хобби</h2>
